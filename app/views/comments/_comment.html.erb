@@ -1,15 +1,17 @@
-<p>
-  <strong>Commenter:</strong>
+<div id="links_style">
+  <h3 class="comments">
   <%= comment.commenter %>
-</p>
+  <h3>
 
-<p>
-  <strong>Comment:</strong>
+
+  <h4 class="comments">
   <%= comment.body %>
-</p>
-
+  </h4>
+<% if user_signed_in? %>
 <p>
-  <%= link_to 'Destroy Comment', [comment.article, comment],
+  <%= link_to 'Destroy This Comment', [comment.article, comment],
                method: :delete,
                data: { confirm: 'Are you sure?' } %>
 </p>
+<% end %>
+</div>
