@@ -7,7 +7,7 @@
 >database:postgresql
 * Database creation
 >Use these instuctions.
->1.$ rails generate model Article title:string text:text
+>1.$ rails generate model Article title:string text:text  ss
 >2.$ rails generate model Comment commenter:string body:text article:references
 
 >3.add gem 'devise' in gemfile
