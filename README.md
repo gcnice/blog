@@ -24,20 +24,26 @@
 * How to run
 >Install git
 
->You should create new Project first in github.Then exec these instructions.
-
->$git init
-
->$git add README.md
-
->$git commit -m "first commit"
-
->$git remote add origin git@github.com:example/example.git.such as:git remote add origin git@github.com:gcnice/blog.git
-
->$git push -u origin master
-
 >Visit https://toolbelt.heroku.com/ to install the Heroku Toolbelt.To make sure the Heroku command line utility is installed, try:
 
 >$ heroku version
 
 >$ heroku login
+
+>$ git clone https://github.com/gcnice/blog.git
+
+>$ cd blog
+
+>$heroku create
+Creating polar-inlet-4930... done, stack is cedar-14.It's random.
+http://polar-inlet-4930.herokuapp.com/ | https://git.heroku.com/polar-inlet-4930.git
+
+>$ git add .
+
+>$ git commit -am "some message"
+
+>$ git push heroku master
+
+>$ heroku open
+
+>if you hava some error,you can exec **$heroku logs** to debug.
